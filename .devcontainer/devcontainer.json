@@ -1,0 +1,21 @@
+{
+    "name": "devcontainer",
+    "build": { "dockerfile": "../Dockerfile" },
+
+    "workspaceFolder": "/workspace",
+    "workspaceMount": "source=${localWorkspaceFolder}/,target=/workspace,type=bind,consistency=delegated",
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "dotfiles.repository": "https://github.com/heussd/dotfiles",
+                "dotfiles.targetPath": "~/.dotfiles",
+                "dotfiles.installCommand": ".install.sh",
+                "files.eol": "\n",
+                "editor.formatOnSave": true
+            },
+            "extensions": [
+                "github.copilot" // AI code completion
+            ]
+        }
+    }
+}

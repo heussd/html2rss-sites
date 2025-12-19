@@ -1,0 +1,10 @@
+channel:
+  url: https://posthog.com/blog/all
+selectors:
+  items:
+    selector: "li.relative div span"
+  title:
+    selector: "h3"
+  link:
+    selector: "a"
+    extractor: "href"
