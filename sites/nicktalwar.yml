@@ -1,0 +1,13 @@
+channel:
+  url: https://nicktalwar.substack.com/archive
+  language: en
+selectors:
+  items:
+    selector: "div[role='article']"
+  title:
+    selector: "div div div:nth-of-type(1) a"
+  link: # <-- html2rss v0.17.0 does not seem to work with url here
+    selector: "a"
+    extractor: "href"
+  description:
+    selector: "div div div:nth-of-type(2) a"
