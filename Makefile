@@ -1,6 +1,6 @@
 html2rss:
 	mkdir -p rss 
-	for f in *.yml; do \
+	for f in sites/*.yml; do \
 		echo "Generating RSS feed from $$f"; \
-		html2rss feed "$$f" > rss/$${f%.yml}.xml; \
+		name=$$(basename "$$f" .yml); html2rss feed "$$f" > rss/$$name.xml; \
 	done
