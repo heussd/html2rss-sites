@@ -1,0 +1,12 @@
+channel:
+  url: https://bytes.dev/archives
+  language: en
+selectors:
+  items:
+    selector: "li"
+  title:
+    selector: "article h3 div"
+  link: # <-- html2rss v0.17.0 does not seem to work with url here
+    selector: "a"
+    extractor: "href"
+  
