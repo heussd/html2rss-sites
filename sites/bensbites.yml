@@ -1,0 +1,13 @@
+channel:
+  url: https://www.bensbites.com/archive
+  language: en
+selectors:
+  items:
+    selector: "div.portable-archive-list div div"
+  title:
+    selector: "div a"
+  link: # <-- html2rss v0.17.0 does not seem to work with url here
+    selector: "a"
+    extractor: "href"
+
+  
