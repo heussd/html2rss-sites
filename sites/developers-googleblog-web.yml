@@ -1,0 +1,13 @@
+channel:
+  url: https://developers.googleblog.com/search/?technology_categories=Web
+  language: en
+selectors:
+  items:
+    selector: "li.search-result"
+  title:
+    selector: "h3.search-result__title"
+  link: # <-- html2rss v0.17.0 does not seem to work with url here
+    selector: "h3.search-result__title a"
+    extractor: "href"
+  description:
+    selector: "p.search-result__summary"
