@@ -4,6 +4,7 @@ all: \
 
 autogen:
 	html2rss auto https://www.anthropic.com/research > rss/anthropic-research.xml
+	html2rss auto https://a24films.com/films > rss/a24films.xml
 
 ymlgen:
 	mkdir -p rss 
